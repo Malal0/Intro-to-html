@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --mainBGLight: #BBDBB4;
+    --mainBGDark: #223021;
+    --mainTextLight: #302131;
+    --mainTextDark: #d3b3db;
+}
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: darkslategrey;
+    color: var(--mainTextLight);
     list-style: none;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tilingtextures.com%2Fwp-content%2Fuploads%2F2019%2F05%2F0090b-1024x1024.jpg&f=1&nofb=1");
+}
 body{
-    background-color: lightgray;
+    background-color: #bbdbb4b6;
     font-family: 'Gentium Book Basic', serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -36,13 +45,14 @@ nav ul{
 }
 
 nav ul li a{
-    color: slategray;
+    color: var(--mainTextLight);
     text-transform: uppercase;
     font-weight: bold;
+    opacity: .6;
     transition: .3s ease-in-out;
 }
 nav ul li a:hover{
-    color: darkslategrey;
+    opacity: 1;
     text-shadow: 1px 5px 5px rgb(139, 139, 139);
     font-size: 18px;
     transform: translateX(20px);
@@ -63,9 +73,6 @@ nav ul li a:hover{
 .cap{
     text-transform: capitalize;
 }
-.m-c-length{
-    word-break: ;
-}
 
 #cr-logo{
     height: 2em;
@@ -73,9 +80,7 @@ nav ul li a:hover{
 
 /*page navigation*/
 #page-nav{
-    background-color: rgba(0, 0, 0, 0.212);
-    /*height: 50vh;
-    width: 10vw;*/
+    background-color: rgba(0, 0, 0, 0.25);
     position: fixed;
     z-index: 10;
     top: 40%;
@@ -87,6 +92,40 @@ nav ul li a:hover{
     left: 0%;
     padding-right: 0em;
 }
+/*dark mode toggle*/
+#dTContainer{
+    position: fixed;
+}
+#darkToggle{
+    background-color: rgba(0, 0, 0, 0.125);
+    border: 2px solid var(--mainTextLight);
+    border-radius: 2em;
+    opacity: .25;
+    position: fixed;
+    z-index: 10;
+    bottom: 2%;
+    right: 1%;
+    text-transform: uppercase;
+    display: flex;
+}
+#darkToggle:hover{
+    opacity: 1;
+}
+#darkToggle p{
+    padding: .5em;
+}
+#circle{
+    height: 40px;
+    width: 53px;
+    background-color: #302131;
+    border-radius: 2em;
+    position: absolute;
+    top: 9%;
+    transform: translateX(54px);
+}
+#circle:hover{
+    transform: translateX(6px);
+}
 .tabs{
     /*background-color: coral;*/
     margin: 1em;
@@ -96,8 +135,6 @@ nav ul li a:hover{
 .tabs:hover{
     opacity: 1;
 }
-
-
 
 /*flex*/
 .flex{
