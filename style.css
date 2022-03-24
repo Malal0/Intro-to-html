@@ -73,17 +73,28 @@ nav ul li a:hover{
 
 /*page navigation*/
 #page-nav{
-    /*background-color: aquamarine;
-    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.212);
+    /*height: 50vh;
     width: 10vw;*/
     position: fixed;
     z-index: 10;
     top: 40%;
+    left: -6%;
+    transition: .3s ease-out;
+    padding-right: 1.5em;
+}
+#page-nav:hover{
+    left: 0%;
+    padding-right: 0em;
 }
 .tabs{
     /*background-color: coral;*/
     margin: 1em;
     text-transform: uppercase;
+    opacity: .4;
+}
+.tabs:hover{
+    opacity: 1;
 }
 
 
