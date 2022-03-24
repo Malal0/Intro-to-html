@@ -10,15 +10,15 @@
     padding: 0;
     text-decoration: none;
     color: var(--mainTextLight);
-    list-style: none;
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tilingtextures.com%2Fwp-content%2Fuploads%2F2019%2F05%2F0090b-1024x1024.jpg&f=1&nofb=1");
+    filter: invert(0);
 }
 body{
-    background-color: #bbdbb4b6;
+    background-color: rgba(187, 219, 180, 0.7);
     font-family: 'Gentium Book Basic', serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -44,6 +44,10 @@ nav ul{
     justify-content: space-around;
 }
 
+nav ul li{
+    list-style-type: none;
+}
+
 nav ul li a{
     color: var(--mainTextLight);
     text-transform: uppercase;
@@ -56,6 +60,9 @@ nav ul li a:hover{
     text-shadow: 1px 5px 5px rgb(139, 139, 139);
     font-size: 18px;
     transform: translateX(20px);
+}
+i{
+    padding-bottom: 2em;
 }
 
 #mainContainer{
