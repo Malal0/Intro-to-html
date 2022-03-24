@@ -15,14 +15,20 @@ body{
     box-sizing: border-box;
     width: 100%;
 }
-h1{
+h1, h2{
     text-transform: capitalize;
+    margin: 1.5em;
 }
 
 nav{
     padding-block: 2em;
     /*background-image: linear-gradient(53deg, #ccfffc, #ffcccf);*/
     height: 6.3125em;
+}
+
+p, li{
+    line-height: 2em;
+    /*margin: .5em*/
 }
 
 nav ul{
@@ -64,6 +70,22 @@ nav ul li a:hover{
 #cr-logo{
     height: 2em;
 }
+
+/*page navigation*/
+#page-nav{
+    /*background-color: aquamarine;
+    height: 50vh;
+    width: 10vw;*/
+    position: fixed;
+    z-index: 10;
+    top: 40%;
+}
+.tabs{
+    /*background-color: coral;*/
+    margin: 1em;
+    text-transform: uppercase;
+}
+
 
 
 /*flex*/

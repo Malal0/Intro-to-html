@@ -23,13 +23,13 @@
         </ul>
     </nav>
     <div id="mainContainer">
-        <div class="me flex column jc-c">
+        <div class="me flex column jc-c" id="top">
             <img src="/images/self portrait.png" height="300px" id="profile-pic" alt="self portrait"
                 title="Accurate Self Portrait of Joshua">
             <h1>joshua martinez</h1>
             <p class="cap">web developer</p>
         </div>
-        <div class="box  flex column jc-c c">
+        <div class="box  flex column jc-c c" id="aboutme">
             <h1>about me</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum similique quo adipisci magnam. Quidem
                 atque
@@ -38,14 +38,14 @@
                 quaerat ut dolorem laboriosam maxime molestias culpa quae numquam nisi nobis quia accusamus enim,
                 repudiandae ab ex architecto adipisci? Obcaecati, numquam esse!</p>
         </div>
-        <div class="box flex column jc-c c">
+        <div class="box flex column jc-c c" id="contactme">
             <h1>contact me</h1>
             <p>Phone: <a href="tel:8884475594">(903) 447-5594</a></p>
             <!-- hk3a0eqmtj@temporaremail.com recovery key:ORHRFOD19178 OR 0RHRF0D19178-->
             <p>Email: <a href="mailto:hk3a0eqmtj@temporaremail.com">deezN_U_T_T_Z_69@basedmail.com</a></p>
             <p>website: <a href="https://thatsthefinger.com/" target="_blank">www.joshuamartinez.com</a></p>
         </div>
-        <div class="box flex column jc-c c">
+        <div class="box flex column jc-c c" id="skills">
             <h1>personal skills</h1>
             <h2>I can:</h2>
             <ul class="cap">
@@ -55,7 +55,7 @@
                 <li>kill</li>
             </ul>
         </div>
-        <div class="box flex column jc-c c">
+        <div class="box flex column jc-c c" id="education">
             <h1>education</h1>
             <ul class="cap">
                 <li>highschool</li>
@@ -63,7 +63,7 @@
                 <li>hard school of knocks</li>
             </ul>
         </div>
-        <div class="box flex column jc-c c">
+        <div class="box flex column jc-c c" id="experience">
             <h1>work experience</h1>
             <ul class="cap">
                 <li>yard work</li>
@@ -72,7 +72,7 @@
             </ul>
 
         </div>
-        <div class="box flex column jc-c c">
+        <div class="box flex column jc-c c" id="friends">
             <h1>friends</h1>
             <ol class="cap">
                 <li>carlo</li>
@@ -81,7 +81,17 @@
             </ol>
         </div>
     </div>
-
+    <div id="page-nav">
+        <!-- make tabs on the right to navigate the page -->
+        <!-- top, aboutme, contactme, skills, education, experience, friends -->
+        <div class="tabs"><a href="#top">Joshua</a></div>
+        <div class="tabs"><a href="#aboutme">about</a></div>
+        <div class="tabs"><a href="#contactme">contact</a></div>
+        <div class="tabs"><a href="#skills">skills</a></div>
+        <div class="tabs"><a href="#education">education</a></div>
+        <div class="tabs"><a href="#experience">experience</a></div>
+        <div class="tabs"><a href="#friends">friends</a></div>
+    </div>
 </body>
 
 </html>
