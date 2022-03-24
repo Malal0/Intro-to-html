@@ -5,11 +5,15 @@
     text-decoration: none;
     color: darkslategrey;
     list-style: none;
+    box-sizing: border-box;
 }
+
 body{
     background-color: lightgray;
     font-family: 'Gentium Book Basic', serif;
     font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
 }
 h1{
     text-transform: capitalize;
@@ -17,17 +21,31 @@ h1{
 
 nav{
     padding-block: 2em;
+    /*background-image: linear-gradient(53deg, #ccfffc, #ffcccf);*/
+    height: 6.3125em;
 }
+
+nav ul{
+    justify-content: space-around;
+}
+
 nav ul li a{
     color: slategray;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 2rem;
+    transition: .3s ease-in-out;
 }
 nav ul li a:hover{
     color: darkslategrey;
+    text-shadow: 1px 5px 5px rgb(139, 139, 139);
+    font-size: 18px;
+    transform: translateX(20px);
 }
 
+#mainContainer{
+    max-width: 65%;
+    margin: auto;
+}
 .me{
     align-items: center;
     height: 95vh;
@@ -35,10 +53,17 @@ nav ul li a:hover{
 
 .box{
     height: 100vh;
-    align-items: center;
-    align-content: center;
+}
+.cap{
+    text-transform: capitalize;
+}
+.m-c-length{
+    word-break: ;
 }
 
+#cr-logo{
+    height: 2em;
+}
 
 
 /*flex*/
@@ -61,7 +86,17 @@ nav ul li a:hover{
     justify-content: space-evenly;
 }
 
+/*justify content center*/
+.jc-c{
+    justify-content: center;
+}
+
 /*align center*/
-.ac{
-    align-content: center;
+.c{
+    align-items: center;
+}
+
+/*align baseline*/
+.bl{
+    align-items: baseline;
 }
