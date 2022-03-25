@@ -8,23 +8,32 @@
 //  2.reference to a tags
 // 3.reference to the slider container
 // 4.refernce to the slider
-console.log("no qema cuh");
 const body = document.querySelector("body");
-const aTag = document.querySelectorAll("a");
 const sliderContainer = document.querySelector("#darkToggle");
 const slider = document.querySelector("#circle");
+const profilePic = document.querySelector("#profile-pic");
 
 slider.addEventListener("click", function () {
-    console.log("here \/")
-    darkMode()
+    darkMode();
+    //    aTagLight();
+    changePic();
 });
 
+/*if image is dark change to light
+if image is light change to dark*/
+function changePic() {
+    if (profilePic.src = "/images/self portrait.png") {
+        profilePic.src = "/images/self portrait white.png";
+    } else {
+        profilePic.src = "/images/self portrait.png";
+    }
+};
 //function that:
 //changes the body background color
 //changes the body, atag, border color
 function darkMode() {
-    slider.classList.toggle("slider--left")
-    body.classList.toggle("body--bg-dark")
-    sliderContainer.classList.toggle("container--border-light-color")
-    aTag.classList.toggle("")
+    slider.classList.toggle("slider--left");
+    body.classList.toggle("body--bg-dark");
+    sliderContainer.classList.toggle("container--border-light-color");
 };
+//aTag.style.color = "#d3b3db";
