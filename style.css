@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
-    --mainBGLight: #BBDBB4;
-    --mainBGDark: #223021;
-    --mainTextLight: #302131;
-    --mainTextDark: #d3b3db;
+    /*
+        opacity .7 light green: #BBDBB4B3
+        light green: #BBDBB4;
+        opacity .7 dark green: #223021b3;
+        dark green: #223021;
+        dark purple: #302131;
+        light purple: #d3b3db;
+    */
+    --mainBG: #BBDBB4B3;
+    --mainText: #302131;
+    --darkBG: #223021b3;
+    --lightText: #d3b3db;
 }
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: var(--mainTextLight);
+    /*color: var(--mainText);*/
     box-sizing: border-box;
 }
 html{
@@ -18,7 +26,7 @@ html{
     filter: invert(0);
 }
 body{
-    background-color: rgba(187, 219, 180, 0.7);
+    background-color: var(--mainBG);
     font-family: 'Gentium Book Basic', serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -49,7 +57,6 @@ nav ul li{
 }
 
 nav ul li a{
-    color: var(--mainTextLight);
     text-transform: uppercase;
     font-weight: bold;
     opacity: .6;
@@ -105,7 +112,6 @@ i{
 }
 #darkToggle{
     background-color: rgba(0, 0, 0, 0.125);
-    border: 2px solid var(--mainTextLight);
     border-radius: 2em;
     opacity: .25;
     position: fixed;
@@ -114,6 +120,7 @@ i{
     right: 1%;
     text-transform: uppercase;
     display: flex;
+    width: 116px;
 }
 #darkToggle:hover{
     opacity: 1;
@@ -121,18 +128,38 @@ i{
 #darkToggle p{
     padding: .5em;
 }
-#circle{
+.container--border-main-color{
+    border: 2px solid var(--mainText);
+}
+.container--border-light-color{
+    border: 2px solid var(--lightText);
+}
+
+.slider{
     height: 40px;
     width: 53px;
-    background-color: #302131;
     border-radius: 2em;
     position: absolute;
     top: 9%;
+    transition: .5s ease-in-out;
+}
+.slider--right{
     transform: translateX(54px);
+    background-color:  var(--mainText);
 }
-#circle:hover{
+.slider--left{
     transform: translateX(6px);
+    background-color:  var(--lightText);
 }
+
+#kingsticker{
+    position: fixed;
+    top: 0px;
+    right: 10em;
+    transform: rotate(180deg) translateY(60px);
+    /* translateY(3px)*/
+}
+
 .tabs{
     /*background-color: coral;*/
     margin: 1em;
@@ -141,6 +168,23 @@ i{
 }
 .tabs:hover{
     opacity: 1;
+}
+
+/*body dark bg*/
+.body--bg-dark{
+    background-color: var(--darkBG);
+}
+/*light txt*/
+.body--txt-light{
+    color: var(--lightText);
+}
+/*light bg*/
+.body--bg-light{
+    background-color: var(--mainBG);
+}
+/*dark txt*/
+.body--txt-dark{
+    color: var(--mainText);
 }
 
 /*flex*/
