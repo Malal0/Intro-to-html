@@ -13,9 +13,18 @@ const body = document.querySelector("body");
 const aTag = document.querySelectorAll("a");
 const sliderContainer = document.querySelector("#darkToggle");
 const slider = document.querySelector("#circle");
-console.log(aTag);
 
 slider.addEventListener("click", function () {
-    console.log("clicked")
-    this.classList.toggle("slider--left")
+    console.log("here \/")
+    darkMode()
 });
+
+//function that:
+//changes the body background color
+//changes the body, atag, border color
+function darkMode() {
+    slider.classList.toggle("slider--left")
+    body.classList.toggle("body--bg-dark")
+    sliderContainer.classList.toggle("container--border-light-color")
+    aTag.classList.toggle("")
+};

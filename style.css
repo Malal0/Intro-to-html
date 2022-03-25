@@ -17,7 +17,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /*color: var(--mainText);*/
     box-sizing: border-box;
 }
 html{
@@ -27,6 +26,7 @@ html{
 }
 body{
     background-color: var(--mainBG);
+    color: var(--mainText);
     font-family: 'Gentium Book Basic', serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -107,9 +107,6 @@ i{
     padding-right: 0em;
 }
 /*dark mode toggle*/
-#dTContainer{
-    position: fixed;
-}
 #darkToggle{
     background-color: rgba(0, 0, 0, 0.125);
     border-radius: 2em;
@@ -173,14 +170,11 @@ i{
 /*body dark bg*/
 .body--bg-dark{
     background-color: var(--darkBG);
+    color: var(--lightText);
 }
 /*light txt*/
 .body--txt-light{
     color: var(--lightText);
-}
-/*light bg*/
-.body--bg-light{
-    background-color: var(--mainBG);
 }
 /*dark txt*/
 .body--txt-dark{
