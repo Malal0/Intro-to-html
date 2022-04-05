@@ -13,11 +13,10 @@ const sliderContainer = document.querySelector("#darkToggle");
 const slider = document.querySelector("#circle");
 const profilePic = document.querySelector("#profile-pic");
 
-const aTags = document.querySelectorAll("a");
+const aTags = document.getElementsByTagName("a");
 
 slider.addEventListener("click", function () {
     darkMode();
-    //    aTagLight();
     changePic();
     anchorTags();
 });
@@ -40,3 +39,9 @@ function darkMode() {
     sliderContainer.classList.toggle("container--border-light-color");
 };
 //aTag.style.color = "#d3b3db";
+
+function anchorTags() {
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].style.color = "var(--lightText)";
+    };
+};
