@@ -13,10 +13,13 @@ const sliderContainer = document.querySelector("#darkToggle");
 const slider = document.querySelector("#circle");
 const profilePic = document.querySelector("#profile-pic");
 
+const aTags = document.querySelectorAll("a");
+
 slider.addEventListener("click", function () {
     darkMode();
     //    aTagLight();
     changePic();
+    anchorTags();
 });
 
 /*if image is dark change to light
