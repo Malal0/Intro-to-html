@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-:root{
+
+:root {
     /*
         opacity .7 light green: #BBDBB4B3
         light green: #BBDBB4;
@@ -13,18 +14,21 @@
     --darkBG: #223021b3;
     --lightText: #d3b3db;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tilingtextures.com%2Fwp-content%2Fuploads%2F2019%2F05%2F0090b-1024x1024.jpg&f=1&nofb=1");
     filter: invert(0);
 }
-body{
+
+body {
     background-color: var(--mainBG);
     color: var(--mainText);
     font-family: 'Gentium Book Basic', serif;
@@ -32,68 +36,74 @@ body{
     box-sizing: border-box;
     width: 100%;
 }
-h1, h2{
+
+h1,
+h2 {
     text-transform: capitalize;
     margin: 1.5em;
 }
 
-nav{
+nav {
     padding-block: 2em;
     /*background-image: linear-gradient(53deg, #ccfffc, #ffcccf);*/
     height: 6.3125em;
 }
 
-p, li{
+p,
+li {
     line-height: 2em;
-    /*margin: .5em*/
 }
 
-nav ul{
+nav ul {
     justify-content: space-around;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
     opacity: .6;
     transition: .3s ease-in-out;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     opacity: 1;
     text-shadow: 1px 5px 5px rgb(139, 139, 139);
     font-size: 18px;
     transform: translateX(20px);
 }
-i{
+
+i {
     padding-bottom: 2em;
 }
 
-#mainContainer{
+#mainContainer {
     max-width: 65%;
     margin: auto;
 }
-.me{
+
+.me {
     align-items: center;
     height: 95vh;
 }
 
-.box{
+.box {
     height: 100vh;
 }
-.cap{
+
+.cap {
     text-transform: capitalize;
 }
 
-#cr-logo{
+#cr-logo {
     height: 2em;
 }
 
 /*page navigation*/
-#page-nav{
+#page-nav {
     background-color: rgba(0, 0, 0, 0.25);
     position: fixed;
     z-index: 10;
@@ -102,11 +112,13 @@ i{
     transition: .3s ease-out;
     padding-right: 1.5em;
 }
-#page-nav:hover{
+
+#page-nav:hover {
     left: 0%;
     padding-right: 0em;
 }
-#darkToggle{
+
+#darkToggle {
     background-color: rgba(0, 0, 0, 0.125);
     border-radius: 2em;
     opacity: .25;
@@ -118,20 +130,24 @@ i{
     display: flex;
     width: 116px;
 }
-#darkToggle:hover{
+
+#darkToggle:hover {
     opacity: 1;
 }
-#darkToggle p{
+
+#darkToggle p {
     padding: .5em;
 }
-.container--border-main-color{
+
+.container--border-main-color {
     border: 2px solid var(--mainText);
 }
-.container--border-light-color{
+
+.container--border-light-color {
     border: 2px solid var(--lightText);
 }
 
-.slider{
+.slider {
     height: 40px;
     width: 53px;
     border-radius: 2em;
@@ -139,16 +155,18 @@ i{
     top: 9%;
     transition: .5s ease-in-out;
 }
-.slider--right{
+
+.slider--right {
     transform: translateX(54px);
-    background-color:  var(--mainText);
-}
-.slider--left{
-    transform: translateX(6px);
-    background-color:  var(--lightText);
+    background-color: var(--mainText);
 }
 
-#kingsticker{
+.slider--left {
+    transform: translateX(6px);
+    background-color: var(--lightText);
+}
+
+#kingsticker {
     position: fixed;
     top: 0px;
     right: 10em;
@@ -156,61 +174,64 @@ i{
     /* translateY(3px)*/
 }
 
-.tabs{
+.tabs {
     /*background-color: coral;*/
     margin: 1em;
     text-transform: uppercase;
     opacity: .4;
 }
-.tabs:hover{
+
+.tabs:hover {
     opacity: 1;
 }
 
 /*body dark bg*/
-.body--bg-dark{
+.body--bg-dark {
     background-color: var(--darkBG);
     color: var(--lightText);
 }
+
 /*light txt*/
-.body--txt-light{
+.body--txt-light {
     color: var(--lightText);
 }
+
 /*dark txt*/
-.body--txt-dark{
+.body--txt-dark {
     color: var(--mainText);
 }
 
 /*flex*/
-.flex{
+.flex {
     display: flex;
 }
 
 /* flex row*/
-.row{
+.row {
     flex-direction: row;
 }
 
 /* flex column*/
-.column{
+.column {
     flex-direction: column;
 }
 
 /*space evenly*/
-.se{
+.se {
     justify-content: space-evenly;
 }
 
 /*justify content center*/
-.jc-c{
+.jc-c {
     justify-content: center;
 }
 
 /*align center*/
-.c{
+.c {
     align-items: center;
 }
 
 /*align baseline*/
-.bl{
+.bl {
     align-items: baseline;
 }
